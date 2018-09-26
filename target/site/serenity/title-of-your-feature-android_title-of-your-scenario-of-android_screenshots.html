@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Prueba de Serenity con Android</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_title_of_your_feature_android.html">Title Of Your Feature Android</a></span>
+                > <span class="truncate-60"><a
+                    href="title-of-your-feature-android_title-of-your-scenario-of-android.html">Title of your scenario of Android </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-09-2018 10:40</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Title Of Your Feature Android </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I want to use this template for my feature file
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_tag1.html">Tag1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_tag.html">Tag
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Title of your scenario of Android
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f1872c6c46c33e23fb77bd719f01f9ba3c30cf4c3bd8ba98991b75dcf31263cb.png" title="When Completar acciones" width="1080"/>
+                <img src="0f872ed8fc6446ba90ade219d808650cd502ae3893e21beab7074148fe277803.png" title="Clic nombre" width="1080"/>
+                <img src="ced60a5f08613039d85b25c1d9e2e44f33d1cf57a6f719e4c8d7b9ebef653761.png" title="And otras acciones" width="1080"/>
+                <img src="1cfcf42fd09a2b6d4a0e183ad16664787120257acb59ec663355ddf304f2b4a5.png" title="Clic contrase&ntilde;a" width="1080"/>
+                <img src="b386313e686b96a89d3dc1be32a4a3de598a9246517029f53639ea9eb727692f.png" title="And Autentificacion" width="1080"/>
+                <img src="1ff6a5cc2e1e492ecb8a030bac94923aac3ba820958846ddc42736b1fa03afee.png" title="Clic reconocimiento" width="1080"/>
+                <img src="a554a83d91f30df47038a6772cecc3a506ca66375bcca3df0807e7e7ef2197f2.png" title="And Aprovar la forma facial" width="1080"/>
+                <img src="92c787e6327f42a009b8f04de30ff069750706124cd674ba1ce467797de45ee5.png" title="Clic reconocimiento facial" width="1080"/>
+                <img src="844f3fb2b885ad5e07ed9a9e677041fae81e50c21d45e3138b4a4cc7d0824b5f.png" title="And Transaccion" width="1080"/>
+                <img src="2fe598ecc0f6f4581854ed973ff3a02ebbe89a7c93c4874b9b22d52f989bf6f8.png" title="Clic transacciones" width="1080"/>
+                <img src="b02e709904ba46a408154d595184f444f9dcfd40bbd206fe141739478f1780dd.png" title="And PedirPlara" width="1080"/>
+                <img src="fa48f7ea3dc263f472ffb20380adb4545fa7c0a6624d1f0512078802404a2536.png" title="Clic pedir" width="1080"/>
+                <img src="519a16935e2dc2f7e99da4bb8403c8cf4c4eb18f2e0fa1f7bc867226f8d9a4ba.png" title="And A quien le vas a pedir" width="1080"/>
+                <img src="3fe2cabf6841122a50a512ca50f35dc4ee7c413e14b1311be4654592775c4d82.png" title="Clic mandar" width="1080"/>
+                <img src="a7c1b889d3b79e527c7a6b80a6ec9ecff05853a53f6d951e6e1ca173fdd60fd0.png" title="And Seleccionar el cliente a quien deseo Pedirle" width="1080"/>
+                <img src="a7c1b889d3b79e527c7a6b80a6ec9ecff05853a53f6d951e6e1ca173fdd60fd0.png" title="Clic seleccionar" width="1080"/>
+                <img src="8defe641e03371731f2187db1e6091eeaf615825af0c76dbd72231cc034e05cd.png" title="And Aceptar" width="1080"/>
+                <img src="2c53bd1a4daed2dd94a63e64ca972b058b655277b5a0cde76f836772f79b1a1d.png" title="Clic aceptar" width="1080"/>
+                <img src="cee71253a5cb41cc2a4305379d8d066ee1d4db7b155cf0c99f0ae1a683e36739.png" title="And Cuanto le vas a pedir" width="1080"/>
+                <img src="cee71253a5cb41cc2a4305379d8d066ee1d4db7b155cf0c99f0ae1a683e36739.png" title="Clic realizar" width="1080"/>
+                <img src="45cda8ea2d9882c67a21bf91c7b36ff641013b53416c565c9d3ec8e11ce8b03c.png" title="And Que mensaje le quieres enviar" width="1080"/>
+                <img src="ac039269e75bfc5dc0f88433641845a8497ee739fa54a531d101e69aea3d37f0.png" title="Clic solicitud" width="1080"/>
+                <img src="45cda8ea2d9882c67a21bf91c7b36ff641013b53416c565c9d3ec8e11ce8b03c.png" title="Then Valido: <span class='success-color'>SUCCESS</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.9.7</span>
+</div>
+</body>
+</html>
